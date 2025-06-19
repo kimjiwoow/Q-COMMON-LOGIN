@@ -193,15 +193,15 @@
       alert('네이버 로그인 기능이 구현될 예정입니다.');
     }
 
-    function submitEmail() {
-      const email = document.getElementById('emailInput').value;
-      if (email) {
-        alert(`로그인 시도: ${email}`);
-        // 여기에 실제 로그인 로직 구현
-      } else {
-        alert('이메일을 입력해주세요.');
-      }
-    }
+  function submitEmail() {
+  const email = document.getElementById('emailInput').value;
+  if (email) {
+    // 개인페이지로 이메일 정보와 함께 이동 (실제 GitHub Pages URL로 교체)
+    window.location.href = `https://사용자명.github.io/프로젝트명/개인페이지.html?email=${encodeURIComponent(email)}`;
+  } else {
+    alert('이메일을 입력해주세요.');
+  }
+}
   </script>
 </body>
 </html>
